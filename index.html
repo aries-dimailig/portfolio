@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Aries Dimailig</title>
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary justify-content-end" id="navigationTop">
+
+        <ul class="nav" id="navInsideContainer">
+
+            <li class="nav-item">
+                <a class="nav-link" href="#aboutMeContainer">About</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#projectsContainer">Projects</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <div id="mainContainer">
+
+        <div class="headerContainer" id="header">
+
+            <div class="nameContainer">
+                <h1 class="name">Ohayo! <br class="nextLineForPhone">The name's </h1>
+                <h3 class="position">Frontend Web Developer</h3>
+                <div class="contactsContainer">
+                    <div class="contact">
+                        <img class="socialLogo" src="images/socialsLogos/roundedGmailLogo.png" alt="Gmail Logo"> 
+                        <a href="mailto:aries.dimailig@citycollegeoftagaytay.edu.ph" class="emailForPC">aries.dimailig@citycollegeoftagaytay.edu.ph</a>
+                        <a href="mailto:aries.dimailig@citycollegeoftagaytay.edu.ph" class="emailForPhone">aries.dimailig...edu.ph</a>
+                    </div>
+                    <div class="contact">
+                        <img class="socialLogo" src="images/socialsLogos/roundedGmailLogo.png" alt="Gmail Logo"> 
+                        <a href="mailto:aries.dimailig8@gmail.com">aries.dimailig8@gmail.com</a>
+                    </div>
+                    <div class="contact">
+                        <img class="socialLogo" src="images/socialsLogos/roundedLinkedInLogo.png" alt="LinkedIn Logo"> 
+                        <a href="https://www.facebook.com/mystery.guy08?mibextid=9R9pXO">aries dimailig</a>
+                    </div>
+                    <div class="contact">
+                        <img class="socialLogo" src="images/socialsLogos/roundedFacebookLogo.png" alt="Facebook Logo"> 
+                        <a href="https://www.linkedin.com/in/aries-dimailig-4660382b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">A RI ES</a>
+                    </div>
+                </div>
+            </div>
+            <div class="imageContainer">
+                <img class="profileImage" src="images/profileImage/ariesPic.jpg" alt="">
+            </div>
+            <div id="btnToShowAboutMeProjectContactContainer">
+                <a href="#aboutMeProjectsContactsMainContainer"><button class="showAboutMeProjectsContacts" onclick="showAboutMeProjectsContacts()">Explore</button></a>
+            </div>
+        </div>
+    
+        <div id="aboutMeProjectsContactsMainContainer">
+
+            <div id="aboutMeContainer">
+                    
+                <h1 class="aboutMeTitle">About Me? hmmm...</h1>
+                <div class="languageContainer">
+                    <h2 class="langageHeader">I Speak</h2>
+                    <!-- for more logos/icons check flaticon.com -->
+                    <div class="progLanguageContainer">
+                        <img src="images/progLanguageLogos/htmlIcon.png" alt="" class="progLanguageIcon">
+                        <img src="images/progLanguageLogos/cssLogo.png" alt="" class="progLanguageIcon" style="margin-inline: 1vw;">
+                        <img src="images/progLanguageLogos/javasrciptLogo.png" alt="" class="progLanguageIcon">
+                    </div>
+                </div>
+                <div class="shortEssayAboutMySelfContainer">
+                    I go by the name <b>Aries R. Dimailig</b>, from Alfonso, Cavite, Philippines. I'm still taking Bachelor 
+                    of Science in Information Technology in City College of Tagaytay (Tagaytay City).
+                </div>
+                <h2 class="philosophyHeader">Philosophy in life?</h2>
+                <div class="philosophy">
+                    The function of good software is to make the complex appear to be simple. <br> - Grady Booch
+                </div>
+            </div>
+
+            <div id="projectsContainer">
+                <h1 class="projectsHeader">Projects</h1>
+                <div class="projectsMainContainer">
+                    <a href="https://ar13zzzz.github.io/Online2DMappingFor8thCongressionalDistrict.github.io/?fbclid=IwAR2ePzhA0_MlDfhYQHGfxEDaegaKzL2l7wQYMCIzvR9MJUVvXOR2QZJtnj8" target="_blank">
+                        <div class="projects">
+                            <img src="images/bgImages/mapBg1.jpg" class="projectImg">
+                            <h3 class="projectText">Capstone Project</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="javascript/basicScripts.js"></script>
+</body>
+</html>

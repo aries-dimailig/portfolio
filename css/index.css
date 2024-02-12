@@ -1,0 +1,407 @@
+body {
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+* {
+    color: #f8f9fa;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* nav */
+.navbar {
+    display: none;
+    position: sticky;
+    z-index: 5;
+    top: 0;
+    background-color: transparent;
+    height: 0;
+}
+.navbar .nav-item .nav-link {
+    color: #f8f9fa;
+    text-decoration: none;
+    font-size: 1.75rem;
+}
+/* main container to wrap all of the content but nav */
+#mainContainer {
+    position: relative;
+    margin-top: -8vh;
+    left: 0;
+}
+
+/* header container */
+.headerContainer {
+    background-color: #1e1e1e;
+    width: 100vw;
+    height: 108vh;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+/* name and position container */
+.headerContainer .nameContainer {
+    width: 50vw;
+    height: 100vh;
+    background-color: transparent;
+    padding-top: 10vw;
+}
+.headerContainer .nameContainer .name {
+    padding-left: 5vw;
+    font-size: 3rem;
+}
+.headerContainer .nameContainer .name::after {
+    content: "ARIES";
+    font-size: 4rem;
+    color: #6f42c1;
+    text-shadow: 0px 0px 22px purple;
+}
+.headerContainer .nameContainer .nextLineForPhone {
+    display: none;
+}
+.headerContainer .nameContainer .position {
+    padding-left: 8vw;
+    font-size: 2rem;
+}
+.headerContainer .nameContainer .position::before {
+    content: "soon ";
+    font-size: 1rem;
+    color: #6f42c1;
+    text-shadow: 0px 0px 22px purple;
+}
+.headerContainer .nameContainer .contactsContainer {
+    height: auto;
+    padding-left: 13vw;
+    margin-top: 3vh;
+}
+.headerContainer .nameContainer .contactsContainer .contact {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: left;
+}
+.headerContainer .nameContainer .contactsContainer .contact .socialLogo {
+    height: 3rem;
+    margin-top: 1.5vh;
+}
+.headerContainer .nameContainer .contactsContainer .contact a {
+    text-decoration: none;
+    color: #6f42c1;
+    font-size: 1.25rem;
+    margin-left: .5vw;
+    margin-top: 1.5vh;
+    white-space: nowrap;
+}
+.headerContainer .nameContainer .contactsContainer .contact .emailForPhone {
+    display: none;
+}
+/* image container */
+.headerContainer .imageContainer {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.headerContainer .imageContainer .profileImage {
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+}
+/* button to scroll and show the rest of the page */
+.headerContainer #btnToShowAboutMeProjectContactContainer {
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    z-index: 5;
+    bottom: 1vw;
+    left: 0;
+    text-align: center;
+}
+.headerContainer #btnToShowAboutMeProjectContactContainer .showAboutMeProjectsContacts {
+    background-color: #6f42c1;
+    color: #f8f9fa;
+    font-size: 1.5rem;
+    padding: .5vw 2vw;
+    border-radius: 50px;
+    border: none;
+    offset: none !important;
+}
+
+/* container for about, projects, and contacts */
+#aboutMeProjectsContactsMainContainer {
+    width: 100vw;
+    display: none;
+}
+
+/* container for about me */
+#aboutMeProjectsContactsMainContainer #aboutMeContainer {
+    display: inline-block;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #6f42c1;
+    padding: 2vh 2vw;
+}
+#aboutMeProjectsContactsMainContainer #aboutMeContainer .aboutMeTitle {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #1e1e1e;
+}
+#aboutMeProjectsContactsMainContainer #aboutMeContainer .languageContainer, #aboutMeProjectsContactsMainContainer #aboutMeContainer .philosophyHeader {
+    text-align: center;
+    margin-top: 4vw;
+}
+#aboutMeProjectsContactsMainContainer #aboutMeContainer .languageContainer .progLanguageContainer {
+    width: 100%;
+    height: auto;
+}
+#aboutMeProjectsContactsMainContainer #aboutMeContainer .languageContainer .progLanguageContainer .progLanguageIcon {
+    height: 3rem;
+}
+#aboutMeProjectsContactsMainContainer #aboutMeContainer .shortEssayAboutMySelfContainer, #aboutMeProjectsContactsMainContainer #aboutMeContainer .philosophy {
+    width: 50%;
+    height: auto;
+    text-align: center;
+    margin-inline: auto;
+    font-size: 1.5rem;
+    padding: 1vh 2vw;
+    margin-top: 3vh;
+}
+#aboutMeProjectsContactsMainContainer #aboutMeContainer .philosophyHeader {
+    margin-top: 2vw;
+}
+#aboutMeProjectsContactsMainContainer #aboutMeContainer .philosophy {
+    margin-top: 0;
+}
+
+/* projects section */
+#aboutMeProjectsContactsMainContainer #projectsContainer {
+    display: inline-block;
+    padding: 2vh 2vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1e1e1e;
+}
+#aboutMeProjectsContactsMainContainer #projectsContainer .projectsHeader {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #6f42c1;
+}
+#aboutMeProjectsContactsMainContainer #projectsContainer .projectsMainContainer {
+    height: 80%;
+    width: 90%;
+    margin-inline: auto;
+    margin-top: 3vw;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+#aboutMeProjectsContactsMainContainer #projectsContainer .projectsMainContainer .projects {
+    height: auto;
+    width: 20vw;
+    text-align: center;
+}
+#aboutMeProjectsContactsMainContainer #projectsContainer .projectsMainContainer .projects:hover, #aboutMeProjectsContactsMainContainer #projectsContainer .projectsMainContainer .projects:focus {
+    animation: scale11 250ms linear;
+    transform: scale(1.1);
+}
+#aboutMeProjectsContactsMainContainer #projectsContainer .projectsMainContainer .projects .projectImg {
+    width: 100%;
+}
+@media only screen and (max-width: 430px) /*phone*/ { 
+    .headerContainer {
+        flex-direction: column-reverse;
+    }
+
+    .headerContainer .nameContainer {
+        width: 100vw;
+        padding-top: 1vh;
+    }
+    .headerContainer .nameContainer .name {
+        font-size: 2rem;
+    }
+    .headerContainer .nameContainer .name::after {
+        font-size: 2.5rem;
+    }
+    .headerContainer .nameContainer .position {
+        padding-left: 8vw;
+        font-size: 1rem;
+    }
+    .headerContainer .nameContainer .nextLineForPhone {
+        display: block;
+    }
+
+    .headerContainer .nameContainer .contactsContainer .contact .emailForPhone {
+        display: block;
+    }
+    .headerContainer .nameContainer .contactsContainer .contact .emailForPC {
+        display: none;
+    }
+    .headerContainer .nameContainer .contactsContainer .contact a {
+        margin-left: 2vw;
+    }
+
+    /* image container */
+    .headerContainer .imageContainer {
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        margin-top: 15vh;
+    }
+    .headerContainer .imageContainer .profileImage {
+        height: 60vw;
+        width: 60vw;
+        border-radius: 50%;
+    }
+
+    /* button to scroll and show the rest of the page */
+    .headerContainer #btnToShowAboutMeProjectContactContainer {
+        width: 100vw;
+        height: auto;
+        position: absolute;
+        z-index: 5;
+        bottom: 8vw;
+        left: 0;
+        text-align: center;
+    }
+    .headerContainer #btnToShowAboutMeProjectContactContainer .showAboutMeProjectsContacts {
+        background-color: #6f42c1;
+        color: #f8f9fa;
+        font-size: 1.5rem;
+        padding: .5vw 6vw;
+        border-radius: 50px;
+        border: none;
+        offset: none !important;
+    }
+
+    /* container for about me */
+    #aboutMeProjectsContactsMainContainer #aboutMeContainer .aboutMeTitle {
+        text-align: center;
+        font-size: 2rem;
+        color: #1e1e1e;
+    }
+    /* prog. language */
+    #aboutMeProjectsContactsMainContainer #aboutMeContainer .languageContainer, #aboutMeProjectsContactsMainContainer #aboutMeContainer .philosophyHeader {
+        text-align: center;
+        margin-top: 2vw;
+    }
+    #aboutMeProjectsContactsMainContainer #aboutMeContainer .languageContainer .progLanguageContainer {
+        width: 100%;
+        height: auto;
+    }
+    #aboutMeProjectsContactsMainContainer #aboutMeContainer .languageContainer .progLanguageContainer .progLanguageIcon {
+        height: 2.5rem;
+    }
+    /* short intro and philosophy */
+    #aboutMeProjectsContactsMainContainer #aboutMeContainer .shortEssayAboutMySelfContainer, #aboutMeProjectsContactsMainContainer #aboutMeContainer .philosophy {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-inline: auto;
+        font-size: 1.25rem;
+        padding: 1vh 5vw;
+        margin-top: 2vh;
+    }
+    #aboutMeProjectsContactsMainContainer #aboutMeContainer .philosophy {
+        margin-top: 0vw;
+    }
+    #aboutMeProjectsContactsMainContainer #aboutMeContainer .languageContainer .langageHeader, #aboutMeProjectsContactsMainContainer #aboutMeContainer .philosophyHeader {
+        font-size: 1.75rem;
+    }
+
+    /* projects section */
+    #aboutMeProjectsContactsMainContainer #projectsContainer .projectsMainContainer {
+        height: 90%;
+        width: 100%;
+    }
+    #aboutMeProjectsContactsMainContainer #projectsContainer .projectsMainContainer .projects {
+        width: 70vw;
+    }
+}
+@media only screen and (min-width: 430px) and (max-width: 768px) /*tablet*/ {
+    /* name and position container */
+    .headerContainer .nameContainer {
+        padding-top: 20vh;
+    }
+    .headerContainer .nameContainer .name {
+        padding-left: 5vw;
+        font-size: 2.5rem;
+    }
+    .headerContainer .nameContainer .name::after {
+        content: "ARIES";
+        font-size: 3rem;
+    }
+    .headerContainer .nameContainer .nextLineForPhone {
+        display: block;
+    }
+    .headerContainer .nameContainer .position {
+        font-size: 1.5rem;
+    }
+
+    /* contacts */
+    .headerContainer .nameContainer .contactsContainer {
+        padding-left: 8vw;
+        margin-top: 3vh;
+    }
+
+    .headerContainer .nameContainer .contactsContainer .contact .emailForPhone {
+        display: block;
+    }
+    .headerContainer .nameContainer .contactsContainer .contact .emailForPC {
+        display: none;
+    }
+
+    .headerContainer .nameContainer .contactsContainer .contact a {
+        margin-left: 1vw;
+    }
+
+    /* about me section */
+    #aboutMeProjectsContactsMainContainer #aboutMeContainer .languageContainer .langageHeader, #aboutMeProjectsContactsMainContainer #aboutMeContainer .philosophyHeader {
+        font-size: 1.9rem;
+    }
+    #aboutMeProjectsContactsMainContainer #aboutMeContainer .shortEssayAboutMySelfContainer, #aboutMeProjectsContactsMainContainer #aboutMeContainer .philosophy {
+        width: 80%;
+        height: auto;
+        text-align: center;
+        margin-inline: auto;
+        font-size: 1.5rem;
+        padding: 1vh 2vw;
+        margin-top: 3vh;
+    }
+    #aboutMeProjectsContactsMainContainer #aboutMeContainer .philosophyHeader {
+        margin-top: 4vw;
+    }
+    #aboutMeProjectsContactsMainContainer #aboutMeContainer .philosophy {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    /* project section */
+    #aboutMeProjectsContactsMainContainer #projectsContainer .projectsMainContainer {
+        height: 90%;
+        width: 100%;
+    }
+    #aboutMeProjectsContactsMainContainer #projectsContainer .projectsMainContainer .projects {
+        width: 60vw;
+    }
+}
+@keyframes scale11{
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
